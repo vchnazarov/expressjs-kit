@@ -1,0 +1,21 @@
+body {
+    background: url('../images/bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.navbar-default {
+    background: rgba(255, 255, 255, .1);
+    border-color: rgba(0, 0, 0, .1);
+
+    .navbar-brand {
+        color: #FFFFFF;
+
+        &:hover {
+            color: #FFFFFF;
+            opacity: .8;
+        }
+    }
+}
