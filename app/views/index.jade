@@ -1,11 +1,11 @@
-doctype html
-html(lang='en')
-    head
-        title= title
-        link(rel='stylesheet', type='text/css', href='css/bootstrap.min.css')
-        link(rel='stylesheet', type='text/css', href='styles/style.css')
-    body
-        nav.navbar.navbar-default.navbar-static-top
-            .container
-                .navbar-header
-                    a.navbar-brand(href='#') What the hell am I watching?
+extends layout.jade
+
+block content
+    #content
+        .container
+            .row
+                .col-md-8.col-md-offset-2.col-xs-10.col-xs-offset-1
+                    form#searchMovie
+                        input.form-control(type="text", placeholder="Find Movies, TV shows ...", name="query")
+            .row
+                #results

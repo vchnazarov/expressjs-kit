@@ -1,0 +1,15 @@
+doctype html
+html(lang='en')
+    head
+        title= title
+        link(rel='stylesheet', type='text/css', href='css/bootstrap.min.css')
+        link(rel='stylesheet', type='text/css', href='styles/style.css')
+        script(src='js/client.js', defer)
+    body
+        nav.navbar.navbar-default.navbar-static-top
+            .container
+                .navbar-header
+                    a.navbar-brand(href='/')
+                        img(alt='Brand', src='images/movie.svg')
+                        span What the hell am I watching?
+        block content

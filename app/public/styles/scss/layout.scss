@@ -13,9 +13,31 @@ body {
     .navbar-brand {
         color: #FFFFFF;
 
-        &:hover {
-            color: #FFFFFF;
-            opacity: .8;
+        img {
+            width: 20px;
+            display: inline-block;
+            vertical-align: bottom;
+            margin-right: 15px;
         }
+
+        &:hover {
+            span {
+                color: #FFFFFF;
+                opacity: .8;
+            }
+        }
+    }
+}
+
+#content {
+    padding-top: 24px;
+}
+
+#searchMovie {
+    input[type="text"] {
+        height: 48px;
+        background: rgba(255, 255, 255, .1);
+        border: none;
+        color: #FFFFFF;
     }
 }
